@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buy.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxl-apple'></i>
+        </a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="iphone.html">iPhone</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="mac.html">Mac</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="acc.html">Accessories</a></li>
+            <!-- <li><a href="support.html">Support</a></li> -->
+        </ul>
+        <button class="btn-nav"><a href="signup.html">Sign In</a></button>
+    </header>
+    
+    <div class="buy-head">
+        <h2 style="color: black;">Buy iPad Mini</h2>
+    </div>
+
+    <div class="gallery-flex">
+        <div class="gallery-flex1">
+            <div class="gallery-flexa gallery-flexc gallery-flexd">
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-space-gray-wificell?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670950638471" alt="" onclick="buyimg(this)" id="smallimg1">
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-space-gray-wificell_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670950644802" alt="" onclick="buyimg(this)" id="smallimg2">
+                <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-space-gray-wificell_AV2?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670633101617" alt="" onclick="buyimg(this)" id="smallimg3">
+                <!-- <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV3?wid=5120&hei=2880&fmt=webp&qlt=70&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZEk5aWVjRmFBS2tnWEF6QzlCMm5HL2xvUnBuYWV4cEhMS1BPZjdQeWJZVnBYSDhSZzY2ODduOURTVGFFY0ZXVW9ZZ2JOWjZNUlpwa083ZytaUU1IQ3RIcnNzVDh6RFFYbklzdWhDVW5vRXk3bTN6OWFscEplRXJVNDhWeU9jWUtFPQ==&traceId=1" alt="" onclick="buyimg(this)" id="smallimg4"> -->
+            </div>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-space-gray-wificell?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670950638471" alt="" id="big-img">
+        </div>
+
+        <div class="gallery-flex2">
+            <h2 style="color: black;"><span>Connectivity.</span>Choose how you will stay connected.</h2>
+            <div class="model-box" id="i-buy1" onclick="changebg1mini()">
+                <p style="color: black;" id="i-buy-p1" >Wifi<br><span id="i-buy-span">₹49900.00</span></p>
+            </div>
+
+            <div class="model-box" id="i-buy2" onclick="changebg2mini()">
+                <p style="color: black;" id="i-buy-p2">Wifi + Cellular<br><span id="i-buy-span2">₹64900.00</span></p>
+            </div>
+
+            <h2 style="color: black;"><span>Finish</span> Pick your favourite.</h2>
+            <i class='bx bxs-circle' style="color: rgb(71, 71, 71);"onclick="buyimgmini1()"></i>
+            <i class='bx bxs-circle' style="color: rgb(253, 223, 253);"onclick="buyimgmini2()"></i>
+            <i class='bx bxs-circle' style="color: rgb(255, 255, 224);"onclick="buyimgmini3()"></i>
+            <i class='bx bxs-circle' style="color: rgb(214, 208, 255);" onclick="buyimgmini4()"></i>
+
+            <p style="color: black;" id="buy-img-text">Color - Natural titanium</p>
+
+            <h2 style="color: black;"><span>Storage.</span> How much space do you need?</h2>
+
+
+            <div class="glitch glitch2" onclick="minibg1()"  id="i-buy3">
+                <p style="color: black;" id="i-buy-p3">64GB <br><span id="c-max1">₹49900.00</span></p>
+            </div>
+
+            <div class="glitch glitch2" onclick="minibg2()" id="i-buy4">
+                <p style="color: black;" id="i-buy-p4">256GB <br><span id="c-max2">₹64900.00</span></p>
+            </div>
+<!-- 
+            <div class="glitch glitch2" onclick="changebg5()" id="i-buy5">
+                <p style="color: black;" id="i-buy-p5">512GB <br><span id="c-max3">(From ₹89900.00)</span></p>
+            </div> -->
+
+            <!-- <div class="glitch glitch2" onclick="changebg6()" id="i-buy6">
+                <p style="color: black;" id="i-buy-p6">1TB <br><span id="c-max4">(From ₹109900.00)</span></p>
+            </div>
+-->
+
+
+            <!-- <h2 style="color: black;"><span>AppleCare+ Coverage.</span>Protect your new iPhone.</h2> -->
+
+
+        </div>
+    </div>
+
+
+    <div class="final-details">
+        <div class="final-det final-det2">
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-space-gray-wificell?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670950638471" alt="" id="final-img1">
+
+            <div class="details">
+            <h2 style="color: black;">Apple iPad Mini </h2>
+            <h3 style="color: black;" id="final-body1">Space Grey</h3>
+            <p style="color: black;" id="final-text1">Connectivity : Wifi </p>
+            <p style="color: black;" id="final-text2">Storage : 64GB</p>
+            <button class="final-buy" id="final-buy1">₹49900.00</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

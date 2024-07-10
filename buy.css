@@ -1,0 +1,40 @@
+.glitch{
+border: 2px solid black;
+border-radius: 20px;
+cursor: pointer;
+    padding: 20px;
+    font-family: "Poppins",sans-serif;
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */ 
+    /* border-color: #00c8ff; */
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    /* padding-top: 20px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.glitch2{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.glitch span{
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+}
+
+.gallery-flexc img{
+    height: 180px;
+    width: 240px;
+}
+
+.gallery-flexd img{
+    height: 180px;
+    width: 250px;
+}

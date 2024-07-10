@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buy.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxl-apple'></i>
+        </a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="iphone.html">iPhone</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="mac.html">Mac</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="acc.html">Accessories</a></li>
+            <!-- <li><a href="support.html">Support</a></li> -->
+        </ul>
+        <button class="btn-nav"><a href="signup.html">Sign In</a></button>
+    </header>
+    
+    <div class="buy-head">
+        <h2 style="color: black;">Buy iPhone 15</h2>
+    </div>
+
+    <div class="gallery-flex">
+        <div class="gallery-flex1">
+            <div class="gallery-flexa gallery-flexc">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OGNDaFdYdHQ0L2VyT2lVS3J0dUtUeHF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGNRa0oyZnFZVE9NMW9kWWxjNlk3YUw=&traceId=1" alt="" onclick="buyimg(this)" id="smallimg1">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2K2VUVFBUek1rRSt0NUhoTmxsVDlhc1dnRHVRVjU3QkdNYWVENDFRVkdOcmprMCtUNWwzYWR0UVU3TWVsbEdUeXRjODhrWk5XcFl2eGdtMU93TW5UemNUMWlPL3FkV2RTSnpsazVYdVlwL05BPT0=&traceId=1" alt="" onclick="buyimg(this)" id="smallimg2">
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink_AV2?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OGh5dnFyZWZlajhzTGNiMitSNjZxZlpGQnBBWVp4a3ZSd0Y4NzlDUVE4dUJUU08xVXZOQlVmeWYva2RCcG9vcVVlenpHM0hWQmgwTE56WDA3cEpSTW5ScUJkUFdickkyZkVDTzhoZXlCWEd3PT0=&traceId=1" alt="" onclick="buyimg(this)" id="smallimg3">
+                <!-- <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium_AV3?wid=5120&hei=2880&fmt=webp&qlt=70&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZEk5aWVjRmFBS2tnWEF6QzlCMm5HL2xvUnBuYWV4cEhMS1BPZjdQeWJZVnBYSDhSZzY2ODduOURTVGFFY0ZXVW9ZZ2JOWjZNUlpwa083ZytaUU1IQ3RIcnNzVDh6RFFYbklzdWhDVW5vRXk3bTN6OWFscEplRXJVNDhWeU9jWUtFPQ==&traceId=1" alt="" onclick="buyimg(this)" id="smallimg4"> -->
+            </div>
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OGNDaFdYdHQ0L2VyT2lVS3J0dUtUeHF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGNRa0oyZnFZVE9NMW9kWWxjNlk3YUw=&traceId=1" alt="" id="big-img">
+        </div>
+
+        <div class="gallery-flex2">
+            <h2 style="color: black;"><span>Model.</span> Which is best for You?</h2>
+            <div class="model-box" id="i-buy1" onclick="changebg1i()">
+                <p style="color: black;" id="i-buy-p1" >iPhone 15<br><span id="i-buy-span">₹79900.00</span></p>
+            </div>
+
+            <div class="model-box" id="i-buy2" onclick="changebg2i()">
+                <p style="color: black;" id="i-buy-p2">iPhone 15 Plus<br><span id="i-buy-span2">₹89900.00</span></p>
+            </div>
+
+            <h2 style="color: black;"><span>Finish</span> Pick your favourite.</h2>
+            <i class='bx bxs-circle' style="color: pink;" onclick="ibuyimg1()"></i>
+            <i class='bx bxs-circle' style="color: rgb(255, 255, 167);" onclick="ibuyimg2()"></i>
+            <i class='bx bxs-circle' style="color: rgb(217, 255, 161);" onclick="ibuyimg3()"></i>
+            <i class='bx bxs-circle' style="color: #e9f9fb;" onclick ="ibuyimg4()"></i>
+            <i class='bx bxs-circle' style="color: rgb(46, 45, 45);" onclick="ibuyimg5()"></i>
+            <p style="color: black;" id="buy-img-text">Color - Pink</p>
+
+            <h2 style="color: black;"><span>Storage.</span> How much space do you need?</h2>
+
+
+            <div class="glitch glitch2" onclick="ifinal1()"  id="i-buy3">
+                <p style="color: black;" id="i-buy-p3">128GB <br><span id="c-max1">₹79900.00</span></p>
+            </div>
+
+            <div class="glitch glitch2" onclick="ifinal2()" id="i-buy4">
+                <p style="color: black;" id="i-buy-p4">256GB <br><span id="c-max2">₹89900.00</span></p>
+            </div>
+
+            <div class="glitch glitch2" onclick="ifinal3()" id="i-buy5">
+                <p style="color: black;" id="i-buy-p5">512GB <br><span id="c-max3">₹109900.00</span></p>
+            </div>
+
+
+
+            <!-- <h2 style="color: black;"><span>AppleCare+ Coverage.</span>Protect your new iPhone.</h2> -->
+
+
+        </div>
+    </div>
+
+
+    <div class="final-details">
+        <div class="final-det final-det2">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-7inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OGNDaFdYdHQ0L2VyT2lVS3J0dUtUeHF2TWlpSzUzejRCZGt2SjJUNGl1VEtsS0dZaHBma3VTb3UwU2F6dkc4TGNRa0oyZnFZVE9NMW9kWWxjNlk3YUw=&traceId=1" alt="" id="final-img1">
+
+            <div class="details">
+            <h2 style="color: black;">Apple iPhone 15 </h2>
+            <h3 style="color: black;" id="final-body1">Pink</h3>
+            <p style="color: black;" id="final-text1">Model : 15 </p>
+            <p style="color: black;" id="final-text2">Storage : 128GB</p>
+            <button class="final-buy" id="final-buy1">₹79900.00</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
